@@ -1,0 +1,3 @@
+NET STOP "SNMP Service"
+TIMEOUT /T 5
+NET START "SNMP Service"
