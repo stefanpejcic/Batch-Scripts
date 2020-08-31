@@ -31,7 +31,7 @@ keytool -genkeypair -alias <your.domain.com> -storetype jks -keystore <your.doma
 # Import keystore
 keytool -v -importkeystore -srckeystore fullchain.pkcs12 -destkeystore sfdcsec.ks -deststoretype JKS
 
-# 
+# add keystore file to dns
 keytool -certreq -alias <your.domain.com> -file <your.domain.com>.csr 
         -keystore <your.domain.com>.jks -ext san=dns:<your.domain.com> 
 		
